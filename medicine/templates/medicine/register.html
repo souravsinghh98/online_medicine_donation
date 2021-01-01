@@ -1,0 +1,8 @@
+{% extends 'medicine/base.html' %}
+{% block content %}
+    <div class="container mt-4 text-center">
+        <a class="btn btn-primary" href="{% url 'donor_register' %}">Donor register</a>
+        <a class="btn btn-primary" href="{% url 'ngo_register' %}">NGO register</a>
+    </div>
+
+{% endblock %}

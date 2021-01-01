@@ -1,0 +1,18 @@
+{% extends 'medicine/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% include 'medicine/navbar.html' %}
+    <div class="container mt-4 col-lg-6">
+        <div class="card px-auto">
+            <div class="card-body">
+                <h3 class="card-title">Donate Form</h3>
+                <form method="POST" action="">
+                    {% csrf_token %}
+                    {{form|crispy}}
+                    <button type="submit" class="btn btn-primary">Donate</button>
+                  </form>
+                  
+            </div>
+        </div>
+    </div>
+{% endblock %}
